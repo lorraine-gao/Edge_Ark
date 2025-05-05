@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {useRouter} from 'next/router'
 import Papa from 'papaparse';
 
-export default function UploadPage() {
+const UploadPage = () => {
   const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState('');
 
@@ -56,3 +56,5 @@ export default function UploadPage() {
     </div>
   );
 }
+
+export default UploadPage

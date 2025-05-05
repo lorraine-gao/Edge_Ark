@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function SearchPage() {
+const SearchPage = () => {
   const [query, setQuery] = useState('');
   const [fixtures, setFixtures] = useState([]);
   const [selectedFixture, setSelectedFixture] = useState(null);
@@ -58,3 +58,5 @@ export default function SearchPage() {
     </div>
   );
 }
+
+export default SearchPage
